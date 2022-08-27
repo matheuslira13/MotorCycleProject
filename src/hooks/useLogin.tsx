@@ -5,7 +5,6 @@ import Routes from "../routes/routes";
 export const useLogin = () => {
   const navigation = useNavigation();
   const [text, setText] = useState("");
-
   const gotoNextScreen = () => {
     navigation.navigate(Routes.Home as never);
   };

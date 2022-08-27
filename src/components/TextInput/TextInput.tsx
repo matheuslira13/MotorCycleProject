@@ -16,7 +16,7 @@ interface TextInputProps {
   onTextInput?: (nextValue: any) => void;
 }
 
-const TextInput = ({
+export const TextInput = ({
   value,
   placeholder,
   hint,
@@ -64,5 +64,3 @@ const TextInput = ({
     </View>
   );
 };
-
-export default TextInput;

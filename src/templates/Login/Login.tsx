@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Text, View, Pressable } from "react-native";
 import { styles } from "./styles";
 import { useNavigation } from "@react-navigation/native";
-import ExemploHardParaVcs from "../../components/TextInput/TextInput";
+import { TextInput } from "../../components/TextInput/TextInput";
+import Example from "../../components/Example/Example";
 
 type LoginProps = {
   text: string;
@@ -16,7 +17,8 @@ export default function Login({ text, setText, gotoNextScreen }: LoginProps) {
       <Text style={styles.title}>Login</Text>
       <Text>{text}</Text>
       <Text style={styles.title}>Bem vindo rapaziada</Text>
-      <ExemploHardParaVcs
+      <Example />
+      <TextInput
         value={text}
         placeholder={"Digite qualquer coisa"}
         hint={text}
@@ -24,6 +26,7 @@ export default function Login({ text, setText, gotoNextScreen }: LoginProps) {
         onTextInput={(e) => setText(e.target.value)}
         isDisabled={false}
       />
+
       <Pressable style={styles.btn} onPress={gotoNextScreen}>
         <Text style={styles.textBtn}>Botao</Text>
       </Pressable>
