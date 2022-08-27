@@ -16,7 +16,7 @@ export default function Login({ text, setText, gotoNextScreen }: LoginProps) {
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
       <Text>{text}</Text>
-      <Text style={styles.title}>Bem vindo rapaziada</Text>
+      <Text style={styles.title}>LEgal</Text>
       <Example />
       <TextInput
         value={text}
