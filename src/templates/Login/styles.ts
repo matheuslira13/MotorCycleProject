@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    paddingRight: GlobalStyles.$spacing40,
-    backgroundColor: GlobalStyles.$primary_black,
+   backgroundColor:GlobalStyles.$primary_black
+
   },
   title: {
     fontSize: 20,
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: "#000031",
-    borderColor: GlobalStyles.$secondary_yellow,
+    borderColor: GlobalStyles.$primary_red,
     color: GlobalStyles.$secondary_white,
     borderLeftWidth: 4,
     borderRightWidth: 4,

@@ -12,7 +12,6 @@ interface TextInputProps {
   hint?: string;
   status?: StatusType;
   isPassword?: boolean;
-  isDisabled?: boolean;
   onTextInput?: (nextValue: any) => void;
 }
 
@@ -22,17 +21,13 @@ const TextInput = ({
   hint,
   status = "default",
   isPassword = false,
-  isDisabled = false,
+ 
   onTextInput,
 }: TextInputProps) => {
   const [isFocused, setFocused] = useState(false);
-  const [displayPassword, setDisplayPassword] = useState(false);
-  const { black, blue } = Colors.primary;
+  const { black } = Colors.primary;
 
-  // Decides if the component is rendered with disabled style
-  let statusProps;
-  if (!isDisabled) {
-    statusProps = {
+  let statusProps = {
       default: isFocused
         ? { style: styles.focused }
         : { style: styles.unfocused },
@@ -40,27 +35,31 @@ const TextInput = ({
       alert: { style: styles.alert },
       error: { style: styles.error },
     }[status];
-  } else {
-    statusProps = { style: styles.disabled };
-  }
+
+    let statusPropsForHint = {
+      default: isFocused
+        ? { style: styles.focused }
+        : { style: styles.unfocused },
+      success: { style: styles.successForHint },
+      alert: { style: styles.alertForHint },
+      error: { style: styles.errorForHint },
+    }[status];
+  
 
   return (
     <View style={styles.container}>
       <View style={styles.inputView}>
         <RNTextInput
           value={value}
-          placeholder={placeholder}
-          secureTextEntry={isPassword && !displayPassword && !isDisabled}
+          placeholder={hint ? hint:placeholder}
+          secureTextEntry={isPassword}
           onTextInput={onTextInput}
-          editable={!isDisabled}
-          style={[styles.textInput, isDisabled && statusProps.style]}
-          placeholderTextColor={!isDisabled ? black : blue}
+          style={[styles.textInput, statusProps.style]}
+          placeholderTextColor={statusPropsForHint.style.color}
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
         />
       </View>
-      <View style={[styles.spacer, statusProps.style]} />
-      <Text style={[styles.hint, statusProps.style]}>{hint}</Text>
     </View>
   );
 };

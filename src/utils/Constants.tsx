@@ -1,14 +1,13 @@
 export const Colors = {
   primary: {
-    blue: "#00F",
-    ocean: "#005533",
-    black: "#000011",
-    disabled: "#9e9a9a",
+    black: "#252525",
+    red: "#DD736C",
+    white:"#FCFCFC",
+    blue: "008BD9",
   },
   secondary: {
-    red: "#FF0044",
-    yellow: "#445500",
-    white: "#babaca",
+    red: "#FF0E00",
+    white:"#BABACA"
   },
   feedback: {
     Success: {
@@ -58,13 +57,13 @@ export const Radius = {
 };
 
 export const Typography = {
-  spacing48: 48,
-  spacing40: 40,
-  spacing32: 32,
-  spacing28: 28,
-  spacing23: 23,
-  spacing19: 19,
-  spacing16: 16,
-  spacing13: 13,
-  spacing11: 11,
+  typography48: 48,
+  typography40: 40,
+  typography32: 32,
+  typography28: 28,
+  typography23: 23,
+  typography19: 19,
+  typography16: 16,
+  typography13: 13,
+  typography11: 11,
 };

@@ -3,13 +3,11 @@ import { Colors, Spacing, Stroke, Radius, Typography } from "./Constants";
 export const GlobalStyles = {
   //Primary Colors
   $primary_black: Colors.primary.black,
-  $primary_blue: Colors.primary.blue,
-  $primary_ocean: Colors.primary.ocean,
-  $disabled: Colors.primary.disabled,
+  $primary_red: Colors.primary.red,
+  $primary_white: Colors.primary.white,
   //Secondary Colors
   $secondary_red: Colors.secondary.red,
   $secondary_white: Colors.secondary.white,
-  $secondary_yellow: Colors.secondary.yellow,
   //Feedback Colors
   $feedback_success: Colors.feedback.Success.default,
   $feedback_success_dark: Colors.feedback.Success.dark,
@@ -41,14 +39,14 @@ export const GlobalStyles = {
   $corner3: Radius.corner3,
   $corner4: Radius.corner4,
   //Typography
-  $spacing48: Typography.spacing48,
-  $spacing40: Typography.spacing40,
-  $spacing32: Typography.spacing32,
-  $spacing28: Typography.spacing28,
-  $spacing23: Typography.spacing23,
-  $spacing19: Typography.spacing19,
-  $spacing16: Typography.spacing16,
-  $spacing13: Typography.spacing13,
-  $spacing11: Typography.spacing11,
+  $typography48: Typography.typography48,
+  $typography40: Typography.typography40,
+  $typography32: Typography.typography32,
+  $typography28: Typography.typography28,
+  $typography23: Typography.typography23,
+  $typography19: Typography.typography19,
+  $typography16: Typography.typography16,
+  $typography13: Typography.typography13,
+  $typography11: Typography.typography11,
 };
 export default GlobalStyles;

@@ -4,33 +4,32 @@ import GlobalStyles from "../../utils/styleGlobal";
 export const styles = StyleSheet.create({
   container: {
     width: "100%",
-    paddingHorizontal: GlobalStyles.$spacing5,
-    paddingVertical: GlobalStyles.$spacing3,
+    paddingHorizontal: GlobalStyles.$spacing7,
   },
   textInput: {
     flex: 1,
-    color: GlobalStyles.$feedback_error,
+    borderBottomWidth: GlobalStyles.$stroke2,
+    borderLeftWidth: GlobalStyles.$stroke2,
+    borderTopWidth: GlobalStyles.$stroke2,
+    borderWidth: GlobalStyles.$stroke2,
+    backgroundColor: GlobalStyles.$primary_white,
+    borderColor: GlobalStyles.$secondary_white,
+    paddingLeft: GlobalStyles.$spacing3,
+    height:GlobalStyles.$spacing6,
+    fontWeight: "500",
   },
   inputView: {
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: "row",
-  },
-  spacer: {
-    marginVertical: GlobalStyles.$spacing2,
-    borderBottomWidth: GlobalStyles.$stroke2,
-  },
-  hint: {
-    fontSize: GlobalStyles.$spacing28,
+   
   },
   // Status
   unfocused: {
-    color: GlobalStyles.$secondary_white,
-    borderColor: GlobalStyles.$secondary_white,
+    color: GlobalStyles.$primary_black,
   },
   focused: {
-    color: GlobalStyles.$secondary_yellow,
-    borderColor: GlobalStyles.$secondary_yellow,
+    color: GlobalStyles.$secondary_white
   },
   success: {
     color: GlobalStyles.$feedback_success_dark,
@@ -44,11 +43,16 @@ export const styles = StyleSheet.create({
     color: GlobalStyles.$feedback_error_dark,
     borderColor: GlobalStyles.$feedback_error,
   },
-  disabled: {
-    color: GlobalStyles.$primary_black,
-    borderColor: GlobalStyles.$disabled,
-    opacity: 0.5,
+  //Hint
+  successForHint: {
+    color: GlobalStyles.$feedback_success_dark,
   },
+  alertForHint: {
+    color: GlobalStyles.$feedback_warning_dark,
+  },
+  errorForHint: {
+    color: GlobalStyles.$feedback_error_dark,
+  }
 });
 
 export default styles;
