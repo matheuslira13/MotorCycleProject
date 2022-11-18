@@ -1,5 +1,6 @@
 const Routes = {
   Login: "login",
+  MotorcycleSelection: "MotorcycleSelectionList",
   Home: "home",
   SelectedMotorcycle: "selectedMotorcycle",
   DetailsMotorcycle: "detailsMotorcycle",
