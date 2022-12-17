@@ -22,7 +22,7 @@ export default function App() {
         <Screen
           initialParams={{}}
           name={Routes.Login}
-          component={LoginScreen}
+          component={LoginSsscreen}
         />
         <Screen initialParams={{}} name={Routes.Home} component={Home} />
         <Screen
