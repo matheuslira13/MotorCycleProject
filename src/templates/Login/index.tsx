@@ -11,7 +11,11 @@ type LoginProps = {
   gotoNextScreen: () => void
 }
 
-const LoginTemplate = ({ text, setText, gotoNextScreen }: LoginProps) => {
+export const LoginTemplate = ({
+  text,
+  setText,
+  gotoNextScreen,
+}: LoginProps) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
@@ -38,5 +42,3 @@ const LoginTemplate = ({ text, setText, gotoNextScreen }: LoginProps) => {
     </View>
   )
 }
-
-export default LoginTemplate
