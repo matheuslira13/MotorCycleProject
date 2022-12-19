@@ -1,13 +1,8 @@
-import { useState } from "react";
-import { Text, View } from "react-native";
-import ExemploHardParaVcs from "../../components/TextInput/TextInput";
+import { HomeTemplate } from '../../templates'
+import { useHome } from '../../hooks/useHome'
 
-export default function Login() {
-  const [text, setText] = useState("");
+export const HomeScreen = () => {
+  const { text } = useHome()
 
-  return (
-    <View>
-      <Text>{text}</Text>
-    </View>
-  );
+  return <HomeTemplate text={text} />
 }

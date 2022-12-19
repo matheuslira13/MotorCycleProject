@@ -1,13 +1,7 @@
-import { useState } from "react";
-import { Text, View } from "react-native";
-import ExemploHardParaVcs from "../../components/TextInput/TextInput";
+import DetailsMotorcycleTemplate from '../../templates/DetailsMotorcycle'
+import { useDetailsMotorcycle } from '../../hooks/useDetailsMotorcycle'
 
-export default function Login() {
-  const [text, setText] = useState("");
-
-  return (
-    <View>
-      <Text>{text}</Text>
-    </View>
-  );
+export const DetailsMotorcycleScreen = () => {
+  const { text } = useDetailsMotorcycle()
+  return <DetailsMotorcycleTemplate text={text} />
 }

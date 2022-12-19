@@ -1,13 +1,8 @@
-import { useState } from "react";
-import { Text, View } from "react-native";
-import ExemploHardParaVcs from "../../components/TextInput/TextInput";
+import { HelpUsTipTemplate } from '../../templates'
+import { useHelpUsTip } from '../../hooks/useHelpUsTip'
 
-export default function Login() {
-  const [text, setText] = useState("");
+export const HelpUsTipScreen = () => {
+  const { text } = useHelpUsTip()
 
-  return (
-    <View>
-      <Text>{text}</Text>
-    </View>
-  );
+  return <HelpUsTipTemplate text={text} />
 }
