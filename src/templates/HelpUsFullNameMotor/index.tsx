@@ -7,12 +7,12 @@ type HelpUsFullNameMotorProps = {
   text: string
 }
 
-const HelpUsFullNameMotorTemplate = ({ text }: HelpUsFullNameMotorProps) => {
+export const HelpUsFullNameMotorTemplate = ({
+  text,
+}: HelpUsFullNameMotorProps) => {
   return (
     <View style={styles.container}>
       <Text>{text}</Text>
     </View>
   )
 }
-
-export default HelpUsFullNameMotorTemplate

@@ -7,12 +7,10 @@ type DetailsMotorcycleProps = {
   text: string
 }
 
-const DetailsMotorcycleTemplate = ({ text }: DetailsMotorcycleProps) => {
+export const DetailsMotorcycleTemplate = ({ text }: DetailsMotorcycleProps) => {
   return (
     <View style={styles.container}>
       <Text>{text}</Text>
     </View>
   )
 }
-
-export default DetailsMotorcycleTemplate
