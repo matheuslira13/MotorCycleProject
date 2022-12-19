@@ -1,13 +1,8 @@
-import { useState } from "react";
-import { Text, View } from "react-native";
-import ExemploHardParaVcs from "../../components/TextInput/TextInput";
+import HelpUsFullNameMotorTemplate from '../../templates/HelpUsFullNameMotor'
+import { useHelpUsFullNameMotor } from '../../hooks/useHelpUsFullNameMotor'
 
-export default function Login() {
-  const [text, setText] = useState("");
+export const HelpUsFullNameMotorScreen = () => {
+  const { text } = useHelpUsFullNameMotor()
 
-  return (
-    <View>
-      <Text>{text}</Text>
-    </View>
-  );
+  return <HelpUsFullNameMotorTemplate text={text} />
 }
