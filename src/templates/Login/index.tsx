@@ -4,6 +4,7 @@ import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native'
 import TextInput from '../../components/TextInput/TextInput'
 import { Header } from '../../components/Header'
+import { LoginButton } from '../../components/LoginButton'
 
 type LoginProps = {
   text: string
@@ -36,9 +37,7 @@ export const LoginTemplate = ({
         onTextInput={(e) => setText(e.target.value)}
         isPassword={true}
       />
-      <Pressable style={styles.btn} onPress={gotoNextScreen}>
-        <Text style={styles.textBtn}>Botao</Text>
-      </Pressable>
+      <LoginButton/>
     </View>
   )
 }
