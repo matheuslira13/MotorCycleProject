@@ -15,7 +15,6 @@ type LoginProps = {
 export const LoginTemplate = ({
   text,
   setText,
-  gotoNextScreen,
 }: LoginProps) => {
   return (
     <View style={styles.container}>
