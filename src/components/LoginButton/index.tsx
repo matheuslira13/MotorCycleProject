@@ -1,15 +1,16 @@
 import { Pressable, Text } from 'react-native';
 import { styles } from './styles';
-import { useLogin } from '../../hooks';
 
+type ButtonProps = {
+  name: string
+  onPress: () => void
+}
 
-export function LoginButton() {
-
-  const { gotoNextScreen } = useLogin()
+export function LoginButton({name, onPress}: ButtonProps) {
 
   return (
-      <Pressable style={styles.button} onPress={gotoNextScreen}>
-        <Text style={styles.textButton}>Log In</Text>
+      <Pressable style={styles.button} onPress={onPress}>
+        <Text style={styles.textButton}>{name}</Text>
       </Pressable>
   );
 }

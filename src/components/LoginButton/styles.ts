@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import GlobalStyles from "../../utils/styleGlobal";
 
 export const styles = StyleSheet.create({
   button: {
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   textButton: {
-    color:'#FFFFFF',
-    fontSize: 14,
+    color: GlobalStyles.$primary_white,
+    fontSize: GlobalStyles.$typography13,
   },
 });
