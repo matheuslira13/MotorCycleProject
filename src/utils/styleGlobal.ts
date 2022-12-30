@@ -5,6 +5,7 @@ export const GlobalStyles = {
   $primary_black: Colors.primary.black,
   $primary_red: Colors.primary.red,
   $primary_white: Colors.primary.white,
+  $primary_blue: Colors.primary.blue,
   //Secondary Colors
   $secondary_red: Colors.secondary.red,
   $secondary_white: Colors.secondary.white,
@@ -49,4 +50,3 @@ export const GlobalStyles = {
   $typography13: Typography.typography13,
   $typography11: Typography.typography11,
 };
-export default GlobalStyles;

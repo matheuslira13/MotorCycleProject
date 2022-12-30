@@ -3,7 +3,7 @@ import { Text, View, Pressable } from 'react-native'
 import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native'
 import TextInput from '../../components/TextInput/TextInput'
-import { Header } from '../../components/Header'
+import { LinkButton } from '../../components/LinkButton'
 
 type LoginProps = {
   text: string
@@ -21,7 +21,7 @@ export const LoginTemplate = ({
       <Text style={styles.title}>Login</Text>
       <Text>{text}</Text>
       <Text style={styles.title}>Bem vindo rapaziada</Text>
-
+    <LinkButton link='kkk'/>
       <TextInput
         value={text}
         placeholder={'Digite qualquer coisa'}

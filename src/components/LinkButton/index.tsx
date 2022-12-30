@@ -1,16 +1,22 @@
 import { Linking,View,Text} from "react-native";
 import {styles} from "../LinkButton/styles"
+import {GlobalStyles} from "../../utils/styleGlobal"; 
 
   type VideoListProps = { 
       link: string     
     }
   
-    export const LinkVideo = ({link}: VideoListProps) => {
-    return (
+    export const LinkButton = ({link}: VideoListProps) => {
 
+      const test= ()=>{
+        /* Linking.openURL(link) */
+        console.log(GlobalStyles.$primary_blue)
+      }
+      
+    return (
       <View>
       <Text 
-      onPress={() => {Linking.openURL(link)}} >  
+      onPress={test} style={styles.font} >  
       Link do vídeo
       </Text>
       </View>
