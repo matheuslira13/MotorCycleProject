@@ -1,6 +1,6 @@
 import { useLogin } from '../../hooks/useLogin'
 
-import LoginTemplate from '../../templates/Login'
+import {LoginTemplate} from '../../templates/Login'
 
 export const LoginScreen = () => {
   const { gotoNextScreen, setText, text } = useLogin()

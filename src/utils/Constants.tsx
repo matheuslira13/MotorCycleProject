@@ -3,7 +3,7 @@ export const Colors = {
     black: "#252525",
     red: "#DD736C",
     white:"#FCFCFC",
-    blue: "008BD9",
+    blue: "#008BD9",
   },
   secondary: {
     red: "#FF0E00",
