@@ -9,7 +9,7 @@ import {GlobalStyles} from "../../utils/styleGlobal";
     export const LinkButton = ({link}: VideoListProps) => {
 
       const test= ()=>{
-        /* Linking.openURL(link) */
+        Linking.openURL(link)
         console.log(GlobalStyles.$primary_blue)
       }
       
